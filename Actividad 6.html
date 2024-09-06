@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiqueta para especificar la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Metaetiqueta para ajustar el ancho de la página al ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>Ejemplo de Uso del Atributo Style y Formato de Texto</title>
+    <!-- Enlace al archivo CSS de Bootstrap desde una CDN para utilizar estilos predefinidos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor principal con un margen superior de 5 unidades -->
+    <div class="container mt-5">
+        <!-- Encabezado de primer nivel con un margen inferior de 4 unidades -->
+        <h1 class="mb-4">Ejemplo de Uso del Atributo Style y Formato de Texto</h1>
+
+        <!-- Fila que contiene dos columnas -->
+        <div class="row">
+            <!-- Primera columna que ocupa 6 de las 12 columnas disponibles en Bootstrap (medio ancho de la fila) -->
+            <div class="col-md-6">
+                <!-- Ejemplos de diferentes formatos de texto -->
+                <p><strong>Texto en negrita:</strong> El elemento <b>&lt;b&gt;</b> se usa para mostrar texto en negrita.</p>
+
+                <p><strong>Texto importante:</strong> El elemento <strong>&lt;strong&gt;</strong> también muestra texto en negrita, pero con una semántica de mayor énfasis.</p>
+
+                <p><em>Texto en cursiva:</em> El elemento <i>&lt;i&gt;</i> se usa para mostrar texto en cursiva.</p>
+
+                <p><em>Texto enfatizado:</em> El elemento <em>&lt;em&gt;</em> muestra texto en cursiva, pero con un énfasis semántico.</p>
+
+                <p><mark>Texto marcado:</mark> El elemento <mark>&lt;mark&gt;</mark> se usa para resaltar texto con un fondo amarillo.</p>
+            </div>
+            <!-- Segunda columna que ocupa las otras 6 columnas disponibles en Bootstrap -->
+            <div class="col-md-6">
+                <!-- Más ejemplos de diferentes formatos de texto -->
+                <p><small>Texto pequeño:</small> El elemento <small>&lt;small&gt;</small> se usa para mostrar texto en un tamaño menor.</p>
+
+                <p><del>Texto eliminado:</del> El elemento <del>&lt;del&gt;</del> indica texto que ha sido eliminado.</p>
+
+                <p><ins>Texto insertado:</ins> El elemento <ins>&lt;ins&gt;</ins> indica texto que ha sido insertado.</p>
+
+                <p>Texto<sub>subíndice</sub>: El elemento &lt;sub&gt; se usa para texto en subíndice.</p>
+
+                <p>Texto<sup>superíndice</sup>: El elemento &lt;sup&gt; se usa para texto en superíndice.</p>
+            </div>
+        </div>
+
+        <!-- Encabezado de segundo nivel con margen superior de 4 unidades y margen inferior de 3 unidades -->
+        <h2 class="mt-4 mb-3">Ejemplos de Estilos con Bootstrap</h2>
+
+        <!-- Ejemplos de aplicación de clases de Bootstrap para estilos específicos -->
+        <p class="text-primary fs-4">Texto con color azul y tamaño de fuente grande usando clases de Bootstrap.</p>
+
+        <p class="bg-light p-3">Texto con fondo gris claro y relleno usando clases de Bootstrap.</p>
+
+        <p class="fst-italic">Texto con estilo en cursiva usando una clase de Bootstrap.</p>
+
+        <p class="border border-dark p-2">Texto con borde negro y relleno usando clases de Bootstrap.</p>
+    </div>
+
+    <!-- Separador horizontal -->
+    <hr>
+<!-- Nuevo contenedor para el formulario de captura de datos personales -->
+<div class="container mt-5">
+    <!-- Encabezado de primer nivel con un margen inferior de 4 unidades -->
+    <h1 class="mb-4">Formulario de Captura de Datos Personales</h1>
+
+    <!-- Formulario para captura de datos personales -->
+    <form>
+        <!-- Grupo de formulario para el campo de nombre -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+
+        <!-- Grupo de formulario para el campo de domicilio -->
+        <div class="mb-3">
+            <label for="domicilio" class="form-label">Domicilio:</label>
+            <input type="text" class="form-control" id="domicilio" name="domicilio" required>
+        </div>
+
+        <!-- Grupo de formulario para el campo de teléfono -->
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+
+        <!-- Grupo de formulario para el campo de correo electrónico -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <!-- Grupo de formulario para el campo de fecha de nacimiento -->
+        <div class="mb-3">
+            <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
+            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+
+        <!-- Grupo de formulario para la selección de género -->
+        <div class="mb-3">
+            <label class="form-label">Género:</label>
+            <!-- Opción de selección para Masculino -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+                <label class="form-check-label" for="masculino">Masculino</label>
+            </div>
+            <!-- Opción de selección para Femenino -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                <label class="form-check-label" for="femenino">Femenino</label>
+            </div>
+            <!-- Opción de selección para Otro -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="otro" value="otro">
+                    <label class="form-check-label" for="otro">Otro</label>
+                </div>
+            </div>
+            <!-- Grupo de botones para enviar o restablecer el formulario -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary me-2">Guardar</button>
+                <button type="reset" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
